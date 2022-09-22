@@ -1,14 +1,29 @@
 <?php
 
 // $num = readline('');
+$num = 1;
 
-$num = ($num);
-PHP_MAX_INT();
+// echo Count_int($num);
 
-echo Count_int($num);
 
-// echo "num".$len;
+    $array [] = 0;
+    $i=0;
+    $array[$i] =  sum($num);
 
+var_dump($array);
+
+//     while(Count_int($array[$i]) != 1)
+//     {
+//     $array[$i] =  sum($num);
+    
+
+//     if(Count_int ($array[$i]) == 1)
+//     {
+//         echo "final". $array[$i];
+//         break;
+//     }
+//     $i++;
+// }
 
 
 
@@ -21,4 +36,14 @@ function Count_int($num)
         $len++;
     }
     return $len;
+}
+
+function sum($num)
+{
+$res = 0;
+while($num != 0)
+{
+    $res += $num%10;
+}
+return $res;
 }
